@@ -4,11 +4,11 @@
 %table#movies.table.table-striped.col-md-12
   %thead
     %tr
-      %th link_to 'Add new movie', new_movie_path
-      %th Movie Titles
-      %th Rating
-      %th Release Date
+      %th{:class => helper_class('title') }= link_to "Movie Title", :sort => "title"
+      %th{:class => helper_class('rating') }= link_to "Rating", :sort => "rating"
+      %th{:class => helper_class('release_date') }= link_to "Release Date", :sort => "release_date"
       %th More Info
+ 
   %tbody
     - @movies.each do |movie|
       %tr
