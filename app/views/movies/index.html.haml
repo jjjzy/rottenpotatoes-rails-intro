@@ -14,10 +14,6 @@
       %th{:class => helper_class('title') }= link_to "Movie Title", movies_path(:sort => "title")
       %th{:class => helper_class('rating') }= link_to "Rating", movies_path(:sort => "rating")
       %th{:class => helper_class('release_date') }= link_to "Release Date", movies_path(:sort => "release_date")
-      
-      // %th{class: @table_header}= link_to "Movie Title", movies_path(:sort_by => 'title'), :id => "table_header"
-      // %th Rating
-      // %th{class: @release_date_header}= link_to "Release Date", movies_path(:sort_by => 'release_date'), :id => "release_date_header"
       %th More Info
  
   %tbody
